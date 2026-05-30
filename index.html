@@ -1,161 +1,374 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sina Amini - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin: 1rem 0;
-      border: 3px solid #fff;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    section h2 {
-      color: #333;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 0.5rem 0;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-      margin-top: 2rem;
-    }
-    a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <!-- Add your photo here -->
-    <img src="profile.jpg" alt="Sina Amini's Photo">
-    <h1>Sina Amini</h1>
-    <p>React Developer | Creative Problem Solver</p>
-  </header>
-  <main>
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>2023-2024:</strong> Web Programming Course, BIHE Institute</li>
-      </ul>
-    </section>
-    <section>
-  <h2 className="text-2xl font-semibold mb-4">Experiences</h2>
-  <ul className="list-disc pl-6 space-y-4">
-    <li>
-      <strong>Almubdieuntech</strong> - Web Development Trainee
-      <br />
-      <em>2025.01 - Present</em>
-      <br />
-      <span>
-        I started my training, where I'm gaining hands-on experience with web technologies such as React, Next.js, and TypeScript. I'm working on several projects to add some features to them.
-      </span>
-    </li>
-    <li>
-      <a
-        href="https://sinaamini90.github.io/yadaki-shop"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
-      >
-        Yadaki Online Shop / In Progress
-      </a>
-      <br />
-      <em>2024.11 - 2024.12</em>
-      <br />
-      <span>A React-based project with TypeScript.</span>
-    </li>
-    <li>
-      <a
-        href="https://sinaamini90.github.io/online-shop"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 hover:underline"
-      >
-        Online Shop mini Project
-      </a>
-      <br />
-      <em>2024.10 - 2024.11</em>
-      <br />
-      <span>A React-based project with Tailwind and Redux.</span>
-    </li>
-  </ul>
-</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Sina Amini | Full-stack & 3D Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">SA</div>
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav> -->
 
-<!--     <section>
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>2024:</strong> Completed a course project for a Todo List website using Node.js, React, Tailwind CSS</li>
-        <li><strong>2023:</strong> Completed a course project for a Connect4 game using JavaScript</li>
-      </ul>
-    </section> -->
-    <section>
-      <h2>Programming Languages & Software</h2>
-      <ul>
-        <li>Node.js ,Next.js<li>
-        <li>React, Redux</li>
-        <li>CSS, Tailwind</li>
-        <li>HTML, JavaScript</li>
-        <li>Figma, Docker, git</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Flexibility in teamwork</li>
-        <li>Willingness to learn</li>
-        <li>Teaching skills</li>
-        <li>Creativity and improvement of the work environment</li>
-        <li>Commitment and integrity in work and professional relationships</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>© 2025 Sina Amini | <a href="mailto:siyam1990@gmail.com">Contact Me</a></p>
-  </footer>
-</body>
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/profile.png" alt="Sina Amini" />
+        </div>
+        <h1>Sina Amini</h1>
+        <p class="hero-tagline">
+          Full-stack Developer · 3D & AR Enthusiast · Next.js Expert
+        </p>
+        <div class="hero-buttons">
+          <a href="#work" class="btn-primary">View Work</a>
+          <a href="mailto:siyam1990@gmail.com" class="btn-secondary"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="work" class="section">
+        <h2 class="section-title">
+          <span class="title-icon">🚀</span> Featured Projects
+        </h2>
+        <div class="project-grid">
+          <!-- Project 1: Ezzix -->
+          <div class="project-card">
+            <div class="gallery">
+              <input type="radio" name="ezzix" id="ezzix-main1" checked />
+              <input type="radio" name="ezzix" id="ezzix-main2" />
+              <input type="radio" name="ezzix" id="ezzix-main3" />
+
+              <div class="main-image">
+                <img class="img1" src="images/ez1.png" alt="Ezzix 1" />
+                <img class="img2" src="images/ez2.png" alt="Ezzix 2" />
+                <img class="img3" src="images/ez3.png" alt="Ezzix 3" />
+              </div>
+
+              <div class="thumbnails">
+                <label for="ezzix-main1">
+                  <img src="images/ez1.png" alt="Thumb 1" />
+                </label>
+                <label for="ezzix-main2">
+                  <img src="images/ez2.png" alt="Thumb 2" />
+                </label>
+                <label for="ezzix-main3">
+                  <img src="images/ez3.png" alt="Thumb 3" />
+                </label>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Ezzix – 3D Jewelry Customizer</h3>
+              <div class="tech-stack">
+                <span>Next.js</span><span>Three.js</span><span>API Routes</span>
+              </div>
+              <p>
+                Real-time interactive 3D jewelry customizer with material,
+                color, and lighting controls — plus AI-powered post-processing
+                for custom image editing on exported renders.
+              </p>
+              <div class="card-links">
+                <a href="https://ezzix.com" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i> Live Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: PawPalMe -->
+          <div class="project-card">
+            <div class="gallery">
+              <input type="radio" name="paw" id="paw-main1" checked />
+              <input type="radio" name="paw" id="paw-main2" />
+              <input type="radio" name="paw" id="paw-main3" />
+
+              <div class="main-image">
+                <img class="img1" src="images/paw1.png" alt="pawpalme 1" />
+                <img class="img2" src="images/paw2.png" alt="pawpalme 2" />
+                <img class="img3" src="images/paw3.png" alt="pawpalme 3" />
+              </div>
+
+              <div class="thumbnails">
+                <label for="paw-main1"
+                  ><img src="images/paw1.png" alt="Thumb"
+                /></label>
+                <label for="paw-main2"
+                  ><img src="images/paw2.png" alt="Thumb"
+                /></label>
+                <label for="paw-main3"
+                  ><img src="images/paw3.png" alt="Thumb"
+                /></label>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>PawPalMe – Community Donation</h3>
+              <div class="tech-stack">
+                <span>Next.js</span><span>Responsive</span
+                ><span>Component-based</span>
+              </div>
+              <p>
+                Platform connecting dog owners for emergency blood donations.
+                Fully responsive UI.
+              </p>
+              <div class="card-links">
+                <a href="https://pawpalme.com" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i> Live Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: yadaki shop -->
+          <div class="project-card">
+            <div class="gallery">
+              <input type="radio" name="yadaki" id="yadaki-main1" checked />
+              <input type="radio" name="yadaki" id="yadaki-main2" />
+              <input type="radio" name="yadaki" id="yadaki-main3" />
+
+              <div class="main-image">
+                <img
+                  class="img1"
+                  src="images/yadaki1.png"
+                  alt="yadaki shop 1"
+                />
+                <img
+                  class="img2"
+                  src="images/yadaki2.png"
+                  alt="yadaki shop 2"
+                />
+                <img
+                  class="img3"
+                  src="images/yadaki3.png"
+                  alt="yadaki shop 3"
+                />
+              </div>
+
+              <div class="thumbnails">
+                <label for="yadaki-main1"
+                  ><img src="images/yadaki1.png" alt="Thumb"
+                /></label>
+                <label for="yadaki-main2"
+                  ><img src="images/yadaki2.png" alt="Thumb" /></label
+                ><label for="yadaki-main3"
+                  ><img src="images/yadaki3.png" alt="Thumb"
+                /></label>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Car Parts Online Shop</h3>
+              <div class="tech-stack">
+                <span> React</span><span> Redux</span>
+              </div>
+              <p>
+                Full-featured e-commerce for car spare parts with Redux state
+                management and responsive design.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 5: AlmubdieunTech -->
+          <div class="project-card">
+            <div class="gallery">
+              <input type="radio" name="al" id="al-main1" checked />
+              <input type="radio" name="al" id="al-main2" />
+              <input type="radio" name="al" id="al-main3" />
+
+              <div class="main-image">
+                <img class="img1" src="images/al1.png" alt="Al 1" />
+                <img class="img2" src="images/al2.png" alt="Al 2" />
+                <img class="img3" src="images/al3.png" alt="Al 3" />
+              </div>
+
+              <div class="thumbnails">
+                <label for="al-main1"
+                  ><img src="images/al1.png" alt="Thumb"
+                /></label>
+                <label for="al-main2"
+                  ><img src="images/al2.png" alt="Thumb"
+                /></label>
+                <label for="al-main3"
+                  ><img src="images/al3.png" alt="Thumb"
+                /></label>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>AlmubdieunTech – Corporate</h3>
+              <div class="tech-stack">
+                <span>Next.js</span><span>Frontend</span>
+              </div>
+              <p>
+                Developed new page sections and applied frontend edits for a
+                corporate website using Next.js.
+              </p>
+              <div class="card-links">
+                <a href="https://almubdieuntech.com" target="_blank"
+                  ><i class="fas fa-external-link-alt"></i> Live Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Roblox Blog -->
+          <div class="project-card">
+            <div class="gallery">
+              <input type="radio" name="blox" id="blox-main1" checked />
+              <input type="radio" name="blox" id="blox-main2" />
+              <input type="radio" name="blox" id="blox-main3" />
+
+              <div class="main-image">
+                <img class="img1" src="images/blox1.png" alt="Roblox 1" />
+                <img class="img2" src="images/blox2.png" alt="Roblox 2" />
+                <img class="img3" src="images/blox3.png" alt="Roblox 3" />
+              </div>
+
+              <div class="thumbnails">
+                <label for="blox-main1"
+                  ><img src="images/blox1.png" alt="Thumb"
+                /></label>
+                <label for="blox-main2"
+                  ><img src="images/blox2.png" alt="Thumb"
+                /></label>
+                <label for="blox-main3"
+                  ><img src="images/blox3.png" alt="Thumb"
+                /></label>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Roblox Gaming Blog</h3>
+              <div class="tech-stack">
+                <span>Next.js</span><span>SEO</span><span>UI Components</span>
+              </div>
+              <p>
+                Promotional website with responsive pages and blog-style game
+                updates.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2: Bazzin -->
+          <div class="project-card">
+            <div class="gallery">
+              <input type="radio" name="bazzin" id="bazzin-main1" checked />
+              <input type="radio" name="bazzin" id="bazzin-main2" />
+              <input type="radio" name="bazzin" id="bazzin-main3" />
+              <input type="radio" name="bazzin" id="bazzin-main4" />
+              <input type="radio" name="bazzin" id="bazzin-main5" />
+
+              <div class="main-image">
+                <img class="img1" src="images/ba1.png" alt="Bazzin 1" />
+                <img class="img2" src="images/ba2.png" alt="Bazzin 2" />
+                <img class="img3" src="images/ba3.png" alt="Bazzin 3" />
+                <img class="img4" src="images/ba4.png" alt="Bazzin 4" />
+                <img class="img5" src="images/ba5.png" alt="Bazzin 5" />
+              </div>
+
+              <div class="thumbnails">
+                <label for="bazzin-main1"
+                  ><img src="images/ba1.png" alt="Thumb"
+                /></label>
+                <label for="bazzin-main2"
+                  ><img src="images/ba2.png" alt="Thumb"
+                /></label>
+                <label for="bazzin-main3"
+                  ><img src="images/ba3.png" alt="Thumb"
+                /></label>
+                <label for="bazzin-main4"
+                  ><img src="images/ba4.png" alt="Thumb"
+                /></label>
+                <label for="bazzin-main5"
+                  ><img src="images/ba5.png" alt="Thumb"
+                /></label>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Bazzin – AR Entertainment Portal</h3>
+              <div class="tech-stack">
+                <span>Next.js</span><span>WebAR</span><span>Full-stack</span>
+              </div>
+              <p>
+                Mobile-only AR entertainment platform with a simple, clean UI.
+                Features include an interactive 3D rotating globe with clickable
+                countries for region-based content discovery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="section">
+        <h2 class="section-title">
+          <span class="title-icon">⚙️</span> Tech Stack
+        </h2>
+        <div class="skills-cloud">
+          <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+          <span class="skill-badge"><i class="fab fa-js"></i> Next.js</span>
+          <span class="skill-badge"><i class="fab fa-js"></i> TypeScript</span>
+          <span class="skill-badge"><i class="fas fa-cube"></i> Three.js</span>
+          <span class="skill-badge"><i class="fab fa-node"></i> Node.js</span>
+          <span class="skill-badge"><i class="fas fa-store"></i> Redux</span>
+          <span class="skill-badge"
+            ><i class="fab fa-css3-alt"></i> Tailwind</span
+          >
+          <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="skill-badge"><i class="fab fa-figma"></i> Figma</span>
+          <span class="skill-badge"><i class="fab fa-docker"></i> Docker</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="two-columns">
+          <div class="info-box">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <p>
+              <strong>Web Programming Course</strong><br />BIHE Institute ·
+              2023-2024
+            </p>
+          </div>
+          <div class="info-box">
+            <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+            <div class="soft-list">
+              <span>Teamwork</span><span>Fast Learner</span
+              ><span>Creativity</span> <span>Teaching</span
+              ><span>Integrity</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <p>© 2026 Sina Amini</p>
+        <div class="footer-links">
+          <a href="mailto:siyam1990@gmail.com"
+            ><i class="fas fa-envelope"></i> siyam1990@gmail.com</a
+          >
+          <a href="https://github.com/sinaamini90" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
