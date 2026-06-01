@@ -56,14 +56,10 @@ body {
   color: #ff6b35;
 }
 
-/* Hero */
-
 /* Hero Section - Two Column Layout */
 .hero {
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   color: white;
   position: relative;
   overflow: hidden;
@@ -72,7 +68,7 @@ body {
 .hero-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -99,7 +95,7 @@ body {
 /* دایره سفید با وضوح کم پشت عکس */
 .glow-circle {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 110%;
@@ -184,7 +180,7 @@ body {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: flex-start; /* ← چپ‌چین */
+  justify-content: flex-start;
 }
 
 .btn-primary,
@@ -228,7 +224,7 @@ body {
   .hero-container {
     grid-template-columns: 1fr;
     gap: 2rem;
-    padding: 2rem;
+    padding: 2rem 2rem 4rem;
     text-align: center;
   }
 
@@ -241,7 +237,7 @@ body {
   }
 
   .hero-buttons {
-    justify-content: start;
+    justify-content: center;
   }
 
   .hero-title {
@@ -275,53 +271,6 @@ body {
   .btn-secondary {
     justify-content: center;
   }
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.hero-tagline {
-  font-size: 1.2rem;
-  color: #aaaaaa;
-  margin: 0.75rem 0 1.5rem;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: start;
-}
-
-.btn-primary,
-.btn-secondary {
-  padding: 0.75rem 1.8rem;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.2s;
-}
-
-.btn-primary {
-  background: #ff6b35;
-  color: white;
-}
-
-.btn-primary:hover {
-  background: #e55a2b;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Container */
@@ -359,7 +308,7 @@ body {
   gap: 2rem;
 }
 
-/* ========== GALLERY با عکس بزرگ + تامبنیل ========== */
+/* ========== GALLERY ========== */
 .gallery {
   background: #2a2a2a;
   padding: 1rem;
@@ -393,7 +342,7 @@ body {
   background: #1a1a1a;
 }
 
-/* نمایش عکس انتخابی */
+/* نمایش عکس انتخابی - این بخش رو باید با IDهای واقعی تکمیل کنی */
 #ezzix-main1:checked ~ .main-image .img1,
 #ezzix-main2:checked ~ .main-image .img2,
 #ezzix-main3:checked ~ .main-image .img3,
@@ -644,9 +593,6 @@ footer {
   }
   .two-columns {
     grid-template-columns: 1fr;
-  }
-  .hero h1 {
-    font-size: 2rem;
   }
   .nav-container {
     flex-direction: column;
