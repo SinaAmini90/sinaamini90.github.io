@@ -19,25 +19,37 @@
   </head>
   <body>
     <header class="hero">
-      <div class="hero-content">
-        <div class="hero-image">
-          <img src="images/profile.jpg" alt="Sina Amini" />
+      <div class="hero-container">
+        <!-- سمت چپ: عکس بزرگ با افکت سه‌بعدی -->
+        <div class="hero-image-side">
+          <div class="image-wrapper-3d">
+            <div class="glow-circle"></div>
+            <img
+              src="images/profile1.png"
+              alt="Sina Amini"
+              class="hero-photo"
+            />
+          </div>
         </div>
-        <h1>Sina Amini</h1>
-        <p class="hero-tagline">
-          Full-stack Developer · 3D & AR Enthusiast · Next.js Expert
-        </p>
-        <div class="hero-buttons">
-          <a
-            href="Sina-Amini-CV.pdf"
-            class="btn-secondary"
-            download="Sina-Amini-Fullstack-CV.pdf"
-          >
-            Download CV
-          </a>
-          <a href="mailto:siyam1990@gmail.com" class="btn-primary"
-            >Contact Me</a
-          >
+
+        <!-- سمت راست: متن و دکمه‌ها -->
+        <div class="hero-content-side">
+          <h1 class="hero-title">Sina Amini</h1>
+          <p class="hero-tagline">
+            Full-stack Developer · 3D & AR Enthusiast · Next.js Expert
+          </p>
+          <div class="hero-buttons">
+            <a
+              href="Sina-Amini-CV.pdf"
+              class="btn-secondary"
+              download="Sina-Amini-Fullstack-CV.pdf"
+            >
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="mailto:siyam1990@gmail.com" class="btn-primary">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
         </div>
       </div>
     </header>
